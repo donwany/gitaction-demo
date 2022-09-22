@@ -1,8 +1,4 @@
-def add(x, y):
-    """Adds two numbers"""
+from mathz.add import add
 
-    result = int(x) + int(y)
-    return result
-
-
-print(add(1, 1))
+if __name__ == "__main__":
+    print(add(1, 2))
