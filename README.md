@@ -5,7 +5,7 @@ This demonstrates the core ideas of DevOps using gitactions workflows
 
 ## Usage
 ```python
-import add
+from mathz.add import add
 
 print(add(1, 1))
 ```
