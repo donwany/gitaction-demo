@@ -5,9 +5,10 @@ This demonstrates the core ideas of DevOps using gitactions workflows
 
 ## Usage
 ```python
-from mathz.add import add
+from mathz.add import add, multiply
 
-print(add(1, 1))
+add(1, 1)
+multiply(2, 5)
 ```
 
 
