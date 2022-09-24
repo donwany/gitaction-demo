@@ -13,6 +13,12 @@ lint:
 deploy:
 	echo "deploy command goes here"
 
+build:
+	docker build -t worldbosskafka
+
+push:
+	docker push worldbosskafka
+
 run:
 	python main.py
 
