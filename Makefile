@@ -14,7 +14,7 @@ deploy:
 	echo "deploy command goes here"
 
 build:
-	docker build -t worldbosskafka
+	docker build -t worldbosskafka .
 
 push:
 	docker push worldbosskafka

@@ -12,4 +12,11 @@ multiply(2, 5)
 divide(20, 2)
 ```
 
+## Train model
+```python
+from mathz.train import main
+
+main()
+```
+
 

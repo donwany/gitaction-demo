@@ -1,7 +1,6 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-import pickle
 
 
 def main():
@@ -22,7 +21,7 @@ def main():
     print("Accuracy: {:.2f}".format(accuracy))
 
     # save the model
-    pickle.dump(model, open("model.pkl", "wb"))
+    # pickle.dump(model, open("model.pkl", "wb"))
 
 
 if __name__ == "__main__":
