@@ -25,9 +25,12 @@ train()
 
 ## Build and Push Image
 ```shell
-docker build -t worldbosskafka/iris-model-app:1.0.0 .
-docker run -p 1957:1957 worldbosskafka/iris-model-app:1.0.0
-docker push worldbosskafka/iris-model-app:1.0.0
+docker build -t worldbosskafka/mathz-app:1.0.0 .
+docker tag worldbosskafka/mathz-app:1.0.0 worldbosskafka/mathz-app:1.0.0
+docker push worldbosskafka/mathz-app:1.0.0
+
+docker run worldbosskafka/mathz-app:1.0.0
+
 ```
 
 
