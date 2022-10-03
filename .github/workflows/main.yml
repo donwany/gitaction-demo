@@ -40,21 +40,21 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - uses: actions/checkout@v2
+      #- uses: actions/checkout@v2
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag worldbosskafka/mathz:$(date +%s)
 
       - name: Build the latest Docker image
         run: docker build . --file Dockerfile --tag worldbosskafka/mathz:latest
 
-      - uses: actions/checkout@v3
-      - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@v4
-        with:
-          name: worldbosskafka
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          dockerfile: Dockerfile
+      #- uses: actions/checkout@v3
+#      - name: Publish to Registry
+#        uses: elgohr/Publish-Docker-Github-Action@v4
+#        with:
+#          name: worldbosskafka
+#          username: ${{ secrets.DOCKERHUB_USERNAME }}
+#          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+#          dockerfile: Dockerfile
 
       - name: Push the latest Docker image
         run: docker push worldbosskafka/mathz:$(date +%s)
