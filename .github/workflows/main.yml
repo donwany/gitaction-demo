@@ -27,3 +27,6 @@ jobs:
       - name: run main python code
         run: |
           make run
+      - name: deploy
+        run: |
+          make deploy

@@ -1,4 +1,5 @@
 from mathz.add import add, multiply, divide
+from mathz.subtract import subtract
 
 
 def test_add():
@@ -12,3 +13,7 @@ def test_multiply():
 def test_divide():
     assert 10 == divide(20, 2)
     # assert 10 == divide(20, 0)
+
+
+def test_subtract():
+    assert 89 == subtract(99, 10)

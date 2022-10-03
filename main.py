@@ -1,5 +1,6 @@
 from mathz.add import add, multiply, divide
-from mathz.train import main
+from mathz.train import train
+from mathz.subtract import subtract
 
 if __name__ == "__main__":
     print(f"Addition is: {add(1, 2)}")
@@ -7,4 +8,7 @@ if __name__ == "__main__":
     print(f"Division is: {divide(20, 2)}")
 
     print('Training model ...')
-    main()
+    train()
+
+    # call subtract here
+    print(f"Subtracting two numbers: {subtract(99, 10)}")

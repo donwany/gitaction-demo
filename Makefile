@@ -5,7 +5,7 @@ test:
 	python -m pytest -vv --cov=main tests/test_main.py
 
 format:
-	black *.py
+	black main.py
 
 lint:
 	pylint --disable=R,C main.py

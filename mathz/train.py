@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 
-def main():
+def train():
     # Load Dataset
     iris = load_iris()
     data, labels = iris.data, iris.target
@@ -25,4 +25,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    train()
