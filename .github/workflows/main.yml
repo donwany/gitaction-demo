@@ -62,7 +62,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mathz:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mathzz:latest
 
       #- uses: actions/checkout@v3
 #      - name: Publish to Registry
@@ -74,4 +74,4 @@ jobs:
 #          dockerfile: Dockerfile
 
       - name: Push the latest Docker image
-        run: docker push worldbosskafka/mathz:$(date +%s)
+        run: docker push worldbosskafka/mathzz:$(date +%s)
